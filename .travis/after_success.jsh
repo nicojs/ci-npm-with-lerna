@@ -8,7 +8,7 @@ console.log(`Running on branch ${process.env.TRAVIS_BRANCH}, version ${process.e
 
 if (process.env.TRAVIS_PULL_REQUEST === 'false'
     && process.env.TRAVIS_BRANCH === 'release'
-    && process.env.TRAVIS_NODE_VERSION === '8') {
+    && process.env.TRAVIS_NODE_VERSION === '6') {
     exec(`git remote add gh-publish https://${process.env.GIT_TOKEN}@github.com/nicojs/ci-npm-with-lerna.git`)
     exec('git config --global user.email "travis-npa@travis.com"');
     exec('git config --global user.name "Travis NPA"');
