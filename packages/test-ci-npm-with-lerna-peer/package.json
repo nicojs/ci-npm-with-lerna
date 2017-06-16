@@ -1,6 +1,6 @@
 {
   "name": "test-ci-npm-with-lerna-peer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "peerDependencies": {
     "test-ci-npm-with-lerna": "^0.1.0"
   },
-  "devDependencies":{
+  "devDependencies": {
     "test-ci-npm-with-lerna": "^0.1.0"
   }
 }
