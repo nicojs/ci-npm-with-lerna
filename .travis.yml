@@ -1,7 +1,9 @@
 language: node_js
 node_js:
 - node
-before_install: echo "//registry.npmjs.org/:_authToken=\${NPM_KEY}" > .npmrc
+before_install: 
+- cat  ~/.npmrc
+- echo "//registry.npmjs.org/:_authToken=\${NPM_KEY}" > ~/.npmrc
 install: npm install
 after_success: ".travis/after_success.jsh"
 env:
