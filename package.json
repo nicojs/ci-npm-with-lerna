@@ -1,0 +1,15 @@
+{
+  "name": "ci-npm-with-lerna-parent",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "lerna run test",
+    "postinstall": "lerna bootstrap"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^2.0.0-rc.5",
+    "mocha": "^3.4.2"
+  }
+}
