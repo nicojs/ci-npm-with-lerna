@@ -4,7 +4,7 @@ const { execSync } = require('child_process');
 
 const exec = (command) => execSync(command, { stdio: [0, 1, 2] });
 
-console.log(`Running on branch ${process.env.TRAVIS_BRANCH}, version ${&& process.env.TRAVIS_NODE_VERSION}`);
+console.log(`Running on branch ${process.env.TRAVIS_BRANCH}, version ${process.env.TRAVIS_NODE_VERSION}`);
 
 if (process.env.TRAVIS_PULL_REQUEST === 'false'
     && process.env.TRAVIS_BRANCH === 'release'
