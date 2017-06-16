@@ -1,6 +1,6 @@
 {
   "name": "test-ci-npm-with-lerna",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A test package to see how to setup CI with travis and lerna using conventional commits",
   "scripts": {
     "test": "mocha"
